@@ -39,7 +39,7 @@ class Projects extends Component {
             Portfolio: {
                 projectName: "Portfolio",
                 website: "https://fly0w.github.io/portfolio/" ,
-                gitHub: "https://fly0w.github.io/portfolio/",
+                gitHub: "https://github.com/Fly0w/portfolio/tree/master",
                 usedTools: ["React", "JS","Html5", "Css3"]
                 }, 
         };
