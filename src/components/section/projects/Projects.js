@@ -1,0 +1,78 @@
+import React, { Component } from 'react';
+import PreviewProject from './PreviewProject';
+import Button from './Button';
+import Card from './card/Card';
+import UsedTools from './UsedTools';
+import "../Section.css";
+import "./Projects.css";
+
+
+class Projects extends Component {
+    constructor(){
+        super();
+        this.state = {
+            selectedProject:"Omotesando",
+            websitePreview: "https://fly0w.github.io/Omotesando1/",
+            gitHubPreview:"https://github.com/Fly0w/Omotesando1",
+            usedTools: ["JS","Html5", "Css3"]
+        }
+    }
+    projects ={
+            Omotesando: {
+                projectName: "Omotesando",
+                website: "https://fly0w.github.io/Omotesando1/" ,
+                gitHub: "https://github.com/Fly0w/Omotesando1",
+                usedTools: ["JS","Html5", "Css3"]
+                },
+            Robofriends: {
+                projectName: "Robofriends",
+                website: "https://fly0w.github.io/robofriends/" ,
+                gitHub: "https://github.com/Fly0w/robofriends/tree/gh-pages",
+                usedTools: ["React","JS","Html5", "Css3"]
+                },
+            BackgroundGenerator: {
+                projectName: "BackgroundGenerator",
+                website: "https://fly0w.github.io/background-generator/" ,
+                gitHub: "https://github.com/Fly0w/background-generator",
+                usedTools: ["JS","Html5", "Css3"]
+                },
+            Portfolio: {
+                projectName: "Portfolio",
+                website: "https://fly0w.github.io/portfolio/" ,
+                gitHub: "https://fly0w.github.io/portfolio/",
+                usedTools: ["React", "JS","Html5", "Css3"]
+                }, 
+        };
+    switchProj = (nomProj) =>{
+        this.setState({selectedProject: this.projects[nomProj].projectName});
+        this.setState({websitePreview: this.projects[nomProj].website});
+        this.setState({gitHubPreview: this.projects[nomProj].gitHub});
+        this.setState({usedTools: this.projects[nomProj].usedTools});
+    }
+    
+    render(){
+        return(
+            <div className='section projects'>
+                <h1 id="Projects" className="sectionTitle">Projects</h1>
+                <div className="listProjects">
+                    <div className="listCard">
+                        <Card projectName = "Omotesando" alter="House Companion Project" isClicked={() => this.switchProj("Omotesando")}/>
+                        <Card projectName = "Robofriends" alter="Robofriends Project" isClicked={() => this.switchProj("Robofriends")}/>
+                        <Card projectName = "BackgroundGenerator" alter="BackgroundGenerator Project" isClicked={() => this.switchProj("BackgroundGenerator")} />
+                        <Card projectName = "Portfolio" alter="Portfolio Project" isClicked={() => this.switchProj("Portfolio")} />
+                    </div>
+                    <div className="preview">
+                        <PreviewProject linkPreview={this.state.selectedProject}/>
+                    </div>
+                    <div className="project_right">
+                        <Button text="Visit Website" link={this.state.websitePreview} />
+                        <Button text="See Source Code" link={this.state.gitHubPreview} />
+                        <UsedTools projectName={this.state.selectedProject} />
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}
+
+export default Projects;

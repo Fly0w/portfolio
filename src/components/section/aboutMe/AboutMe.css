@@ -1,0 +1,347 @@
+.aboutMe_one {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    height:40vh;
+    width: auto;
+    
+    background: url(../../img/bg3.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: 'Cormorant Garamond', serif;
+    color: antiquewhite;
+    
+    opacity: 0.95;
+}
+
+.aboutMe_two {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+
+    height:40vh;
+    width: auto;
+
+    background: url(../../img/bg1_1.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: 'Cormorant Garamond', serif;
+    color: antiquewhite;
+
+    opacity: 0.97;
+}
+
+.aboutMe_three {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+
+    height:40vh;
+    width: auto;
+
+    background: url(../../img/bg2.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    clip-path: polygon(0% 0%,100% 0%,100% 90%,0% 100%);
+    padding: 0 0 50px 0;
+
+    font-family: 'Cormorant Garamond', serif;
+    color: antiquewhite;
+
+    opacity: 0.93;
+}
+
+.aboutMe_one .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 15px;
+
+    text-shadow: black 2px 4px 5px;
+}
+
+.aboutMe_two .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 15px;
+}
+
+.aboutMe_three .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 15px;
+    
+    text-shadow: black 2px 2px 2px;
+}
+
+.text {
+    width: 30vw;
+    font-size: 1.35vw;
+}
+
+
+
+@media (max-width: 1201px) {
+    .text {
+        width: 35vw;
+        font-size: 1.7vw;
+        font-weight: 500;
+    }
+    .sectionTitle {
+        padding:0;
+    }
+
+    .aboutMe_one {
+        height:40vh;
+        width: auto;
+        
+        background-position: right;
+        opacity: 0.95;
+    }
+
+    .aboutMe_two {
+        height:40vh;
+        width: auto;
+    
+        opacity: 0.97;
+    }
+    .aboutMe_three {    
+        height:40vh;
+        width: auto;
+
+        background-position: left;
+    
+        opacity: 0.93;
+    }
+
+    .aboutMe_one .container {
+        text-shadow: black 2px 2px 2px;
+    }
+
+    
+    .aboutMe_two .container {
+        text-shadow: black 1px 1px 1px;
+    }
+    
+    .aboutMe_three .container {
+        text-shadow: black 2px 1px 1px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .text {
+        width: 40vw;
+        font-size: 2vw;
+        font-weight: 500;
+    }
+    .sectionTitle {
+        padding:0;
+    }
+
+    .aboutMe_one {
+        height:40vh;
+        width: auto;
+        
+        background-position: right;
+        opacity: 0.95;
+    }
+
+    .aboutMe_two {
+        height:40vh;
+        width: auto;
+    
+        opacity: 0.97;
+    }
+    .aboutMe_three {    
+        height:40vh;
+        width: auto;
+    
+        clip-path:none;
+        padding: 0;
+
+        background-position: left;
+    
+        opacity: 0.93;
+    }
+
+    .aboutMe_one .container {
+        text-shadow: black 2px 2px 2px;
+    }
+
+    .aboutMe_two .container {
+        text-shadow: black 1px 1px 1px;
+    }
+    
+    .aboutMe_three .container {
+        text-shadow: black 2px 1px 1px;
+    }
+}
+
+@media (max-width: 769px) {
+    .text {
+        width: 50vw;
+        font-size: 2.3vw;
+        font-weight: 500;
+    }
+    .sectionTitle {
+        padding:0;
+    }
+
+    .aboutMe_one {
+        height:32vh;
+        width: auto;
+        
+        background-position: right;
+        opacity: 0.95;
+    }
+
+    .aboutMe_two {
+        height:32vh;
+        width: auto;
+    
+        opacity: 0.97;
+    }
+    .aboutMe_three {    
+        height:32vh;
+        width: auto;
+    
+        clip-path:none;
+        padding: 0;
+
+        background-position: left;    
+        opacity: 0.93;
+    }
+
+    .aboutMe_one .container {
+        text-shadow: black 2px 2px 2px;
+    }
+
+    
+    .aboutMe_two .container {
+        text-shadow: black 1px 1px 1px;
+        padding: 0 15px;
+    }
+    
+    .aboutMe_three .container {
+        text-shadow: black 2px 1px 1px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 610px) {
+    .text {
+        width: 100%;
+        text-align: center; 
+        font-size: 3.1vw;
+        font-weight: 500;
+    }
+
+    .aboutMe_one {
+        height:32vh;
+        width: auto;
+        
+        background-position: right;
+        opacity: 0.95;
+    }
+
+    .aboutMe_two {
+    
+        height:32vh;
+        width: auto;
+    
+        opacity: 0.97;
+    }
+    .aboutMe_three {    
+        height:32vh;
+        width: auto;
+    
+        clip-path:none;
+
+        background-position: left;
+    
+        opacity: 0.93;
+    }
+
+    .aboutMe_one .container {
+        text-shadow: black 2px 2px 2px;
+    }
+
+    .aboutMe_two .container {
+        text-shadow: black 1px 1px 1px;
+    }
+    
+    .aboutMe_three .container {
+        text-shadow: black 2px 2px 2px;;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    .text {
+        width: 100%;
+        text-align: center; 
+        font-size: 3.7vw;
+        font-weight: 500;
+    }
+
+    .aboutMe_one {
+        height:32vh;
+        width: auto;
+        
+        background-position: right;
+        opacity: 0.95;
+    }
+
+    .aboutMe_two {
+    
+        height:32vh;
+        width: auto;
+    
+        opacity: 0.97;
+    }
+    .aboutMe_three {    
+        height:32vh;
+        width: auto;
+    
+        clip-path:none;
+        padding: 0;
+
+        background-position: left;
+    
+        color: antiquewhite;
+    
+        opacity: 0.93;
+    }
+
+    .aboutMe_one .container {
+        text-shadow: black 2px 2px 2px;
+    }
+    
+    .aboutMe_two .container {
+        text-shadow: black 2px 2px 2px;
+    }
+    
+    .aboutMe_three .container {
+        text-shadow: black 2px 2px 2px;
+    }
+}
+
