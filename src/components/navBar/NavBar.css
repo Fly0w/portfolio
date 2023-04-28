@@ -1,0 +1,65 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    height: fit-content;
+    width: auto;
+
+    position: sticky;
+    top:0;
+    background: linear-gradient(0.22turn, rgb(4, 8, 32), rgb(130, 130, 130));
+    
+    z-index: 1;
+}
+
+.navbar a {
+    padding: 3px 4vw;
+    
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+
+    color:rgb(255, 255, 255);
+}
+
+.navbar a:hover {
+    transform: scale(1.02);
+    color:rgb(193, 193, 193);
+    cursor: pointer;
+}
+
+.iconLang{
+    color: white ;
+    font-size: 1.1rem;
+    margin : 0 1.5vw;
+}
+
+@media (max-width: 769px) {
+    .navbar{
+        justify-content:space-around;
+    }
+    .navbar a {
+        padding: 3px 4vw;
+        
+        font-size: 3.7vw;
+    }
+    /* Cancel hover effect on small screens*/
+    .navbar a:hover {
+        transform: none;
+        color:rgb(255, 255, 255);
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 610px) {
+    .navbar{
+        justify-content:center;
+    }
+    .navbar a {
+        font-size: 5vw;
+    }
+}

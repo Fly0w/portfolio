@@ -1,0 +1,61 @@
+.listCard .card{
+    height: 6vw ;
+    width: 6vw ;
+    margin: 2vh 0 ;
+
+    box-shadow:1px 1px 3px ;
+    border-radius: 100px;
+    
+    opacity: 0.8;
+}
+
+.listCard .card:hover{
+    cursor: pointer;
+
+    opacity: 1;
+}
+
+@media (max-width: 1201px) {
+    .listCard .card{
+        height: 7vw ;
+        width: 7vw ;
+        margin: 1.5vh 0;
+    }
+}
+
+/* @media (max-width: 1025px) {
+
+} */
+
+@media (max-width: 769px) {
+    .listCard .card{
+        height: 8vw ;
+        width: 8vw ;
+        margin: 0 2vh ;
+    
+        box-shadow:1px 1px 3px ;
+        border-radius: 100px;
+        
+        opacity: 0.8;
+    }
+    /* Cancel hover effect for small screens */
+    .listCard .card:hover{
+        cursor: pointer;
+    
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 610px) {
+    .listCard .card{
+        height: 10vw ;
+        width: 10vw ;
+    }
+}
+
+@media (max-width: 480px) {
+    .listCard .card{
+        height: 12vw ;
+        width: 12vw ;
+    }
+}

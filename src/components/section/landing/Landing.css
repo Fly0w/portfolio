@@ -1,0 +1,186 @@
+.landing{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    padding:0 10vw ;
+
+    background:linear-gradient(0.75turn, rgb(5, 5, 5), rgb(75, 75, 75));
+
+    z-index: -1; /* for animated button bg */
+}
+
+/* Text, image and buttons */
+.landing .content{
+    display: flex;
+    flex-direction: column;
+}
+
+.landing h1{
+    width: 60vw;
+    padding: 20px 0 ;
+    
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3vw;
+    font-weight: 600;
+
+    color: rgb(239, 239, 239);
+}
+
+/*button*/
+.landing a{
+    position: relative;
+    height: min-content;
+
+    width: 15vw;
+    padding: 5px;
+    margin: 40px 0;
+
+    border: 3px solid rgb(244, 244, 244);
+    border-radius: 1px;
+    
+    overflow: hidden;
+
+    background-color: none;
+    
+    color: rgb(249, 251, 253);
+
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.8vw;
+    letter-spacing: 0.2vw;
+    text-decoration: none;
+
+    z-index: 0;/* for animated button bg */
+}
+
+/* animated button */
+.landing a:hover{
+    color: rgb(20, 20, 20);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.landing a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+
+    background: linear-gradient(rgb(245, 245, 245), rgb(171, 171, 171));
+
+    z-index: -1;/* for animated button bg */
+    
+    transition: all 0.3s;
+}
+
+.landing a:hover:before{
+    width: 100%;   
+}
+
+/*image*/
+.landing .drawing{
+    height:auto;
+    width:22vw;
+
+    margin: 0 5vw;
+
+    clip-path: circle();
+    
+    opacity: 0.95;
+}
+
+
+@media (max-width: 1201px) {
+    .landing h1{
+        font-size: 3.5vw;
+    }
+    
+    .landing a{
+        width: 20vw;
+        margin: 20px 0;
+
+        font-size: 2.6vw;
+    }
+}
+
+@media (max-width: 1025px) {   
+    .landing a{
+        width: 25vw;
+
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 769px) {
+    .landing h1{
+        font-size: 4.2vw;
+    }
+    
+    .landing a{   
+        width: 25vw;
+        margin: 20px 0;
+
+        font-size: 3vw;
+    }
+    /*Cancel hover effect for small screens */
+    .landing a:hover{
+        color: rgb(249, 251, 253);
+    }
+    
+    .landing a:hover:before{
+        width: 0%;   
+    }
+}
+
+@media (max-width: 610px) {
+    .landing{
+        flex-direction:column-reverse;
+        justify-content: center;
+    }
+    .landing .content{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing h1{
+        width: 65vw;
+        padding: 0 ;
+
+        font-size: 5vw;
+        
+        text-align: center;
+    }
+    
+    .landing a{   
+        width: 40vw;
+        margin: 5vh 0;
+
+        font-size: 6vw;
+    }
+
+    .landing .drawing{
+        width:45vw;
+    
+        margin: 3vh 0 2vh 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .landing h1{
+        width: 60vw;
+
+        font-size: 5.5vw;
+    }
+    .landing .drawing{
+        width:50vw;
+    
+        margin:0 0 8vh 0;
+    }
+}

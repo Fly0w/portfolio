@@ -1,0 +1,142 @@
+.contact{
+    display: flex;
+    flex-direction: column;  
+
+    padding: 80px 0 20px 0; 
+
+    background: linear-gradient(0.75turn, rgb(26, 26, 26), rgb(0, 0, 0));
+    clip-path:polygon(0% 10%, 100% 0%,100% 100%,0% 100%);
+    
+    font-family: 'Cormorant Garamond', serif;
+    color: antiquewhite;
+}
+
+.group{
+    display: block;
+}
+/* List of Icons */
+.listIcons{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Individual Icons */
+.listIcons a{
+    color: rgb(188, 167, 167);
+}
+.listIcons a:hover{
+    color: rgb(195, 195, 195);
+}
+.listIcons h1:active{
+    transform:scale(0.9);
+}
+.listIcons h1{
+    font-size: 7vh;
+}
+
+/* Image and text */
+#message {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .group .drawing{
+    height:180px;
+    width:auto;
+
+    margin: 0 50px;
+
+    clip-path: circle();
+}
+
+.contact p{
+    width:30vw;
+
+    font-size: 1.4rem;
+    font-style:italic ;
+}
+
+/* Signature name */
+.contact span {
+    display: flex;
+    justify-content: right;
+
+    margin: 10px 0;
+
+    font-size: 1.1rem;
+}
+
+
+/* @media (max-width: 1201px) {
+
+} */
+
+@media (max-width: 1025px) {
+    .contact{ 
+        margin-top: 50px;
+    
+        clip-path:none;
+    }
+}
+
+@media (max-width: 769px) {
+    .contact{ 
+        margin-top: 50px;
+        padding: 20px 0 30px 0; 
+    
+        clip-path:none;
+    }
+    .group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #message {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        text-align: center;
+    }
+
+    .listIcons h1{
+        font-size: 7vw;
+    }
+    .contact p{
+        width:60vw;
+    
+        font-size: 3.5vw;
+    }
+    .contact span {
+        margin: 10px 0;
+    
+        font-size: 2.5vw;
+    }
+    /* Cancel Hover and Active effect on small screens*/
+    .listIcons a:hover{
+        color: rgb(188, 167, 167);
+    }
+    .listIcons h1:active{
+        transform:none;
+    }
+}
+
+@media (max-width: 610px) {
+    .listIcons h1{
+        font-size: 6.5vh;
+    }
+    .contact p{
+        font-size: 5vw;
+    }
+    .contact span {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .listIcons h1{
+        font-size: 5vh;
+    }
+}

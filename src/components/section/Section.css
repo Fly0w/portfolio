@@ -1,0 +1,38 @@
+.sectionTitle{
+    padding: 20px 0;
+    margin:0 20px;
+    font-size: 3vw;
+}
+
+@media (max-width: 1201px) {
+    .sectionTitle{
+        margin:20px 10px;
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 1025px) {
+    .sectionTitle{
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 769px) {
+    .sectionTitle{
+        margin:20px 0;
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 610px) {
+    .sectionTitle {
+        padding: 2vh 0;
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .sectionTitle {
+        font-size: 7vw;
+    }
+}
