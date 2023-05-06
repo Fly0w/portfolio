@@ -11,14 +11,20 @@ class Projects extends Component {
     constructor(){
         super();
         this.state = {
-            selectedProject:"Omotesando",
-            websitePreview: "https://fly0w.github.io/Omotesando1/",
-            gitHubPreview:"https://github.com/Fly0w/Omotesando1",
-            usedTools: ["JS","Html5", "Css3"]
+            selectedProject:"FacetoFace",
+            websitePreview: "https://fly0w.github.io/facetoface/",
+            gitHubPreview:"https://github.com/Fly0w/facetoface",
+            usedTools: ["React", "Node", "JS","Html5", "Css3"]
         }
     }
 
     projects ={
+            FacetoFace: {
+                projectName: "FacetoFace",
+                website: "https://fly0w.github.io/facetoface/" ,
+                gitHub: "https://github.com/Fly0w/facetoface",
+                usedTools: ["JS","Html5", "Css3", ]
+                },
             Omotesando: {
                 projectName: "Omotesando",
                 website: "https://fly0w.github.io/Omotesando1/" ,
@@ -58,6 +64,7 @@ class Projects extends Component {
                 <h1 id="Projects" className="sectionTitle">{this.props.text.header}</h1>
                 <div className="listProjects">
                     <div className="listCard">
+                        <Card projectName = "FacetoFace" alter="Face recognition app" isClicked={() => this.switchProj("FacetoFace")}/>
                         <Card projectName = "Omotesando" alter="House Companion Project" isClicked={() => this.switchProj("Omotesando")}/>
                         <Card projectName = "Robofriends" alter="Robofriends Project" isClicked={() => this.switchProj("Robofriends")}/>
                         <Card projectName = "BackgroundGenerator" alter="BackgroundGenerator Project" isClicked={() => this.switchProj("BackgroundGenerator")} />

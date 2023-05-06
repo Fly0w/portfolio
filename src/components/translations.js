@@ -30,6 +30,7 @@ export const translations = {
         robofriends : "A basic ReactJS App that I have made following a tutorial in the Zero To Mastery program. The app makes individual cards for every customer / robot with their personal information. The search bar is updated dynamically when the user types something in it.",
         backgroundGenerator : "Make your own color gradient using this simple website, and copy-paste the CSS property to put us it in your own websites ! So useful that I actually used it to make this website's backgrounds !",
         portfolio : "The website you are actually browsing at the very moment ! I tried to use new things such as file download, new CSS properties and design in a more general way. Hope you like it !",
+        facetoface : "A ReatJS app that allows you to detect a face inside an image by providing a URL to it. You first have to register to create your own profile, then scan as many face images that you want !",
         buttons : {
           visit : "Visit Website",
           github : "See source code"
@@ -76,6 +77,7 @@ export const translations = {
         robofriends : "Zero To Masteryプログラムのチュートリアルに沿って作った、基本的なReactJSアプリです。このアプリは、顧客やロボットの個人情報を記載したカードを作成します。検索バーは、ユーザーが何かを入力すると、動的に更新されます",
         backgroundGenerator : "このシンプルなウェブサイトを使って、自分だけのカラーグラデーションを作り、CSSプロパティをコピーペーストして、自分のウェブサイトに貼り付けましょう！とても便利なので、実際にこのサイトの背景を作るのに使ってみました！",
         portfolio : "あなたが今現在、実際に閲覧しているウェブサイトです！ファイルのダウンロード、新しいCSSプロパティ、より一般的な方法でのデザインなど、新しいものを使ってみました。あなたがそれを好むことを願っています！",
+        facetoface : "画像に含まれる顔をURLで検出できるReatJSアプリです。登録をして自分のプロフィールを作成し、好きなだけ顔画像をスキャンできます！",
         buttons : {
           visit : "ホームページを見る",
           github : "ソースコードを見る"
@@ -122,6 +124,7 @@ export const translations = {
         robofriends : "Une application ReactJS basique, que j'ai réalisée en suivant le programme ZeroToMastery. Le site créé des cartes individuelles pour chaque client-robot, avec leurs informations personnelles. La barre de recherche est actualisée dynamiquement chaque fois qu'on y entre quelquechose.",
         backgroundGenerator : "Réalisez vos propres gradients de couleurs réutilisables en CSS ! Il suffit de sélectionner deux couleurs, l'orientation souhaitée. Copiez-collez la ligne en CSS et le tour est joué ! Tellement pratique que je m'en suis servi pour la réalisation de ce portfolio !",
         portfolio : "Le site que vous êtes actuellement en train de visiter ! J'ai essayé d'incorporer de nouvelles fonctionnalités comme le téléchargement de fichier, une interface multi-langage, et plus généralement une conception graphique avec de nouveaux effets CSS. J'espère qu'il vous plaira !",
+        facetoface : "FacetoFace est une app ReactJS permettant de détecter le visage d'une image insérant l'URL dans le champ prévu à cet effet. Vous devrez d'abord vous enregistrer pour créer votre compte, puis vous pourrez scanner autant d'images que vous le souhaitez !",
         buttons : {
           visit : "Visiter le site",
           github : "Voir le code source"

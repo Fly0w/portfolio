@@ -2,7 +2,16 @@ import React, { Component } from 'react';
 
 class PreviewProject extends Component {
     render(){
-       if (this.props.linkPreview === "Omotesando"){
+        if (this.props.linkPreview === "FacetoFace"){
+            return(
+                <div className="content_img">
+                    <img preload="auto" className="img__img" src= "https://github.com/Fly0w/portfolio/blob/main/gif/FacetoFace%20preview-min.gif?raw=true" alt="FacetoFace Project"/>                  
+                    <div className="text_img">
+                        <p>{this.props.text.facetoface}</p>
+                    </div>
+                </div>
+            )
+        } else if (this.props.linkPreview === "Omotesando"){
             return(
                 <div className="content_img">
                     <img preload="auto" className="img__img" src= "https://github.com/Fly0w/portfolio/blob/main/gif/Omotesando%20preview-min.gif?raw=true" alt="Omotesando Project"/>                  

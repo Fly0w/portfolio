@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
-import { FaReact, FaJs, FaHtml5, FaCss3 } from "react-icons/fa";
+import { FaReact, FaJs, FaHtml5, FaCss3, FaNodeJs, FaDatabase } from "react-icons/fa";
 
 class UsedTools extends Component {
     render(){
-        if (this.props.projectName === "Omotesando"){
+        if (this.props.projectName === "FacetoFace"){
+            return(
+                <div className='listTools'>
+                    <FaReact />
+                    <FaNodeJs />
+                    <FaDatabase />
+                </div>
+            );
+        } else if (this.props.projectName === "Omotesando"){
             return(
                 <div className='listTools'>
                     <FaJs />
