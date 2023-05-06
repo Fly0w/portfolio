@@ -32,4 +32,4 @@ It is possible to chose between the 3 languages from the Navigation Bar. The app
   };
 ```
 
-![](https://github.com/Fly0w/portfolio/blob/main/Media/File%20download.gif)
+![](https://github.com/Fly0w/portfolio/blob/main/Media/Change%20language.gif)
