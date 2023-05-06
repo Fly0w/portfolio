@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FaReact, FaJs, FaHtml5, FaCss3, FaNodeJs, FaDatabase } from "react-icons/fa";
+import { SiHeroku } from "react-icons/si";
 
 class UsedTools extends Component {
     render(){
@@ -9,6 +10,7 @@ class UsedTools extends Component {
                     <FaReact />
                     <FaNodeJs />
                     <FaDatabase />
+                    <SiHeroku />
                 </div>
             );
         } else if (this.props.projectName === "Omotesando"){

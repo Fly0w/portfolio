@@ -13,8 +13,7 @@ class Projects extends Component {
         this.state = {
             selectedProject:"FacetoFace",
             websitePreview: "https://fly0w.github.io/facetoface/",
-            gitHubPreview:"https://github.com/Fly0w/facetoface",
-            usedTools: ["React", "Node", "JS","Html5", "Css3"]
+            gitHubPreview:"https://github.com/Fly0w/facetoface"
         }
     }
 
@@ -22,32 +21,27 @@ class Projects extends Component {
             FacetoFace: {
                 projectName: "FacetoFace",
                 website: "https://fly0w.github.io/facetoface/" ,
-                gitHub: "https://github.com/Fly0w/facetoface",
-                usedTools: ["JS","Html5", "Css3", ]
+                gitHub: "https://github.com/Fly0w/facetoface"
                 },
             Omotesando: {
                 projectName: "Omotesando",
                 website: "https://fly0w.github.io/Omotesando1/" ,
-                gitHub: "https://github.com/Fly0w/Omotesando1",
-                usedTools: ["JS","Html5", "Css3"]
+                gitHub: "https://github.com/Fly0w/Omotesando1"
                 },
             Robofriends: {
                 projectName: "Robofriends",
                 website: "https://fly0w.github.io/robofriends/" ,
-                gitHub: "https://github.com/Fly0w/robofriends/tree/gh-pages",
-                usedTools: ["React","JS","Html5", "Css3"]
+                gitHub: "https://github.com/Fly0w/robofriends/tree/gh-pages"
                 },
             BackgroundGenerator: {
                 projectName: "BackgroundGenerator",
                 website: "https://fly0w.github.io/background-generator/" ,
-                gitHub: "https://github.com/Fly0w/background-generator",
-                usedTools: ["JS","Html5", "Css3"]
+                gitHub: "https://github.com/Fly0w/background-generator"
                 },
             Portfolio: {
                 projectName: "Portfolio",
                 website: "https://fly0w.github.io/portfolio/" ,
-                gitHub: "https://github.com/Fly0w/portfolio/tree/master",
-                usedTools: ["React", "JS","Html5", "Css3"]
+                gitHub: "https://github.com/Fly0w/portfolio/tree/master"
                 }, 
         };
 
@@ -55,7 +49,6 @@ class Projects extends Component {
         this.setState({selectedProject: this.projects[nomProj].projectName});
         this.setState({websitePreview: this.projects[nomProj].website});
         this.setState({gitHubPreview: this.projects[nomProj].gitHub});
-        this.setState({usedTools: this.projects[nomProj].usedTools});
     }
     
     render(){
