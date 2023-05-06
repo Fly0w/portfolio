@@ -124,7 +124,7 @@ export const translations = {
         robofriends : "Une application ReactJS basique, que j'ai réalisée en suivant le programme ZeroToMastery. Le site créé des cartes individuelles pour chaque client-robot, avec leurs informations personnelles. La barre de recherche est actualisée dynamiquement chaque fois qu'on y entre quelquechose.",
         backgroundGenerator : "Réalisez vos propres gradients de couleurs réutilisables en CSS ! Il suffit de sélectionner deux couleurs, l'orientation souhaitée. Copiez-collez la ligne en CSS et le tour est joué ! Tellement pratique que je m'en suis servi pour la réalisation de ce portfolio !",
         portfolio : "Le site que vous êtes actuellement en train de visiter ! J'ai essayé d'incorporer de nouvelles fonctionnalités comme le téléchargement de fichier, une interface multi-langage, et plus généralement une conception graphique avec de nouveaux effets CSS. J'espère qu'il vous plaira !",
-        facetoface : "FacetoFace est une app ReactJS permettant de détecter le visage d'une image insérant l'URL dans le champ prévu à cet effet. Vous devrez d'abord vous enregistrer pour créer votre compte, puis vous pourrez scanner autant d'images que vous le souhaitez !",
+        facetoface : "FacetoFace est une app ReactJS permettant de détecter le visage d'une image en insérant l'URL dans le champ prévu à cet effet. Vous devrez d'abord vous enregistrer pour créer votre compte, puis vous pourrez scanner autant d'images que vous le souhaitez !",
         buttons : {
           visit : "Visiter le site",
           github : "Voir le code source"
