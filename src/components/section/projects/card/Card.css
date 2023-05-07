@@ -57,5 +57,6 @@
     .listCard .card{
         height: 12vw ;
         width: 12vw ;
+        margin: 0 1.3vh ;
     }
 }

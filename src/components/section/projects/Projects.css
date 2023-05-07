@@ -156,6 +156,7 @@
 
 .listTools{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     
@@ -163,7 +164,7 @@
 }
 
 .listTools svg{
-    margin: 0 1.7vw;
+    margin: 1vw 1.7vw;
 }
 
 
@@ -182,7 +183,7 @@
         justify-content: space-evenly;
         align-items: center;
         padding: 2vh 0;
-        height: 115vh;   
+        height: 90vh;   
     }
     .listProjects{
         flex-direction: column;
@@ -250,7 +251,7 @@
 
 @media (max-width: 610px) {
     .projects {
-        height: 105vh;   
+        height: 88vh;   
     }
     .preview img {
         width: 80vw;
