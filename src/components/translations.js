@@ -26,6 +26,7 @@ export const translations = {
       },
       projects :{
         header : "Projects",
+        promptopia: "Share your best ChatGPT prompts with the Promptopia community ! Sign in using your Google account, then post and edit your best AI prompts with other users. This app is made using NextJS to ensure fast page & image loading times, as well as easy website routing.",
         omotesando : "A simple website, with a practical use ! Managing chores in a place like a sharehouse is not always easy. The House Companion gives information regarding rubbish sorting to the weekly duos on duty !",
         robofriends : "A basic ReactJS App that I have made following a tutorial in the Zero To Mastery program. The app makes individual cards for every customer / robot with their personal information. The search bar is updated dynamically when the user types something in it.",
         backgroundGenerator : "Make your own color gradient using this simple website, and copy-paste the CSS property to put us it in your own websites ! So useful that I actually used it to make this website's backgrounds !",
@@ -73,6 +74,7 @@ export const translations = {
       },
       projects :{
         header : "プロジェクト",
+        promptopia: "最高のChatGPTプロンプトをPromptopiaのコミュニティと共有しませんか？Googleアカウントでログインし、最高のAIプロンプトを他のユーザーと投稿・編集できます。このアプリはNextJSを使用しており、ページと画像の読み込み時間が速く、ウェブサイトのルーティングも効率的です。",
         omotesando : "シンプルなウェブサイトで、実用的な使い方を！シェアハウスのような場所での家事管理は、必ずしも簡単ではありません。ハウスコンパニオンは、ゴミの分別に関する情報を週番の2人組に伝えています！",
         robofriends : "Zero To Masteryプログラムのチュートリアルに沿って作った、基本的なReactJSアプリです。このアプリは、顧客やロボットの個人情報を記載したカードを作成します。検索バーは、ユーザーが何かを入力すると、動的に更新されます",
         backgroundGenerator : "このシンプルなウェブサイトを使って、自分だけのカラーグラデーションを作り、CSSプロパティをコピーペーストして、自分のウェブサイトに貼り付けましょう！とても便利なので、実際にこのサイトの背景を作るのに使ってみました！",
@@ -120,6 +122,7 @@ export const translations = {
       },
       projects :{
         header : "Projets",
+        promptopia: "Partagez vos meilleurs prompts ChatGPT avec la communauté Promptopia ! Enregistrez vous via votre compte Google, et commencez à poster ou éditer vos meilleurs prompts IA. Cette app a été créé en utilisant NextJS, permettant un chargement de page et d'images rapides, ainsi qu'un routing de pages plus efficace",
         omotesando : "Un site internet simple, avec une utilisation concrète ! Gérer les rotations de corvées dans une grande colocation n'est pas toujours simple. Heureusement, ce site nous donne des informations claires et en temps réel sur le tri des déchets, ainsi que sur les duos responsables hebdomadaire .",
         robofriends : "Une application ReactJS basique, que j'ai réalisée en suivant le programme ZeroToMastery. Le site créé des cartes individuelles pour chaque client-robot, avec leurs informations personnelles. La barre de recherche est actualisée dynamiquement chaque fois qu'on y entre quelquechose.",
         backgroundGenerator : "Réalisez vos propres gradients de couleurs réutilisables en CSS ! Il suffit de sélectionner deux couleurs, l'orientation souhaitée. Copiez-collez la ligne en CSS et le tour est joué ! Tellement pratique que je m'en suis servi pour la réalisation de ce portfolio !",
