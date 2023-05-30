@@ -1,15 +1,26 @@
 import React, { Component } from 'react';
-import { FaReact, FaJs, FaHtml5, FaCss3, FaNodeJs, FaDatabase } from "react-icons/fa";
-import { SiHeroku } from "react-icons/si";
+import { FaReact, FaJs, FaHtml5, FaCss3, FaNodeJs } from "react-icons/fa";
+import { SiHeroku, SiMongodb, SiPostgresql } from "react-icons/si";
+import { TbBrandNextjs, TbBrandVercel } from "react-icons/tb";
 
 class UsedTools extends Component {
     render(){
-        if (this.props.projectName === "FacetoFace"){
+        if (this.props.projectName === "Promptopia"){
+            return(
+                <div className='listTools'>
+                    <TbBrandNextjs />
+                    <FaReact />
+                    <SiMongodb />
+                    <TbBrandVercel />
+                </div>
+            );
+        }
+        else if (this.props.projectName === "FacetoFace"){
             return(
                 <div className='listTools'>
                     <FaReact />
                     <FaNodeJs />
-                    <FaDatabase />
+                    <SiPostgresql />
                     <SiHeroku />
                 </div>
             );

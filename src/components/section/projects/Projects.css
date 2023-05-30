@@ -13,8 +13,9 @@
 .listCard{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
-    height: min-content;
+    height: 60vh;
     width:min-content;
     margin: 0 30px;
     padding: 10px;
@@ -22,6 +23,30 @@
     border: 2px solid rgb(50, 50, 50);
     border-radius: 200px;
     background-color: rgba(214, 214, 214, 0.353);
+}
+
+/* Scroll bar */
+.scroll{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;
+
+    overflow-y:scroll;
+    height: 500px;
+}
+.scroll::-webkit-scrollbar {
+    visibility: hidden;
+    width: 5px;
+}
+.scroll::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+.scroll::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+.scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
 
 
@@ -168,6 +193,7 @@
 }
 
 
+
 /* @media (max-width: 1201px) {
 
 }
@@ -194,6 +220,15 @@
 
         margin: 0;
         padding: 1.5vw;
+    
+        height: min-content;
+        width:70vw;
+        margin: 0 30px;
+        padding: 10px;
+    
+        border: 2px solid rgb(50, 50, 50);
+        border-radius: 200px;
+        background-color: rgba(214, 214, 214, 0.353);
     }
     .preview img {
         width: 77vw;
@@ -247,7 +282,22 @@
     .listTools svg{
         margin: 0 4vw
     }
+    .scroll{
+        flex-direction: row;
+        justify-content:space-around ;
+
+        overflow-y:hidden;
+        overflow-x: scroll;
+        width: 65vw;
+        height: min-content;
+    }
+    .scroll::-webkit-scrollbar {
+        visibility: hidden;
+        height: 3px;
+    }
 }
+
+
 
 @media (max-width: 610px) {
     .projects {

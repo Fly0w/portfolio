@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PreviewProject from './PreviewProject';
+import Scroll from './Scroll';
 import Button from './Button';
 import Card from './card/Card';
 import UsedTools from './UsedTools';
@@ -61,13 +62,17 @@ class Projects extends Component {
             <div className='section projects'>
                 <h1 id="Projects" className="sectionTitle">{this.props.text.header}</h1>
                 <div className="listProjects">
+                    
                     <div className="listCard">
-                        <Card projectName = "Promptopia" alter="Prompt Sharing Website" isClicked={() => this.switchProj("Promptopia")}/>
-                        <Card projectName = "FacetoFace" alter="Face Recognition App" isClicked={() => this.switchProj("FacetoFace")}/>
-                        <Card projectName = "Omotesando" alter="House Companion Project" isClicked={() => this.switchProj("Omotesando")}/>
-                        <Card projectName = "Robofriends" alter="Robofriends Project" isClicked={() => this.switchProj("Robofriends")}/>
-                        <Card projectName = "BackgroundGenerator" alter="BackgroundGenerator Project" isClicked={() => this.switchProj("BackgroundGenerator")} />
-                        <Card projectName = "Portfolio" alter="Portfolio Project" isClicked={() => this.switchProj("Portfolio")} />
+                        <Scroll>
+                            <Card projectName = "Promptopia" alter="Prompt Sharing Website" isClicked={() => this.switchProj("Promptopia")}/>
+                            <Card projectName = "FacetoFace" alter="Face Recognition App" isClicked={() => this.switchProj("FacetoFace")}/>
+                            <Card projectName = "Omotesando" alter="House Companion Project" isClicked={() => this.switchProj("Omotesando")}/>
+                            <Card projectName = "Robofriends" alter="Robofriends Project" isClicked={() => this.switchProj("Robofriends")}/>
+                            <Card projectName = "BackgroundGenerator" alter="BackgroundGenerator Project" isClicked={() => this.switchProj("BackgroundGenerator")} />
+                            <Card projectName = "Portfolio" alter="Portfolio Project" isClicked={() => this.switchProj("Portfolio")} />
+                        </Scroll>
+                        
                     </div>
                     <div className="preview">
                         <PreviewProject linkPreview={this.state.selectedProject} text={this.props.text}/>
