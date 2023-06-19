@@ -26,6 +26,7 @@ export const translations = {
       },
       projects :{
         header : "Projects",
+        omotebike: "A NextJS web app to manage and keep track of the shared bike of a share house. Easy to use, it allows the users to know exactly when someone used the bike, or when the bike is not available !",
         promptopia: "Share your best ChatGPT prompts with the Promptopia community ! Sign in using your Google account, then post and edit your best AI prompts with other users. This app is made using NextJS to ensure fast page & image loading times, as well as easy website routing.",
         omotesando : "A simple website, with a practical use ! Managing chores in a place like a sharehouse is not always easy. The House Companion gives information regarding rubbish sorting to the weekly duos on duty !",
         robofriends : "A basic ReactJS App that I have made following a tutorial in the Zero To Mastery program. The app makes individual cards for every customer / robot with their personal information. The search bar is updated dynamically when the user types something in it.",
@@ -74,6 +75,7 @@ export const translations = {
       },
       projects :{
         header : "プロジェクト",
+        omotebike: "シェアハウスのシェアバイクを管理・追跡するためのNextJSのWebアプリです。使いやすく、いつ誰かが自転車を使いましたか、いつ自転車が使えなくなりましたかを正確に知ることができます！",
         promptopia: "最高のChatGPTプロンプトをPromptopiaのコミュニティと共有しませんか？Googleアカウントでログインし、最高のAIプロンプトを他のユーザーと投稿・編集できます。このアプリはNextJSを使用しており、ページと画像の読み込み時間が速く、ウェブサイトのルーティングも効率的です。",
         omotesando : "シンプルなウェブサイトで、実用的な使い方を！シェアハウスのような場所での家事管理は、必ずしも簡単ではありません。ハウスコンパニオンは、ゴミの分別に関する情報を週番の2人組に伝えています！",
         robofriends : "Zero To Masteryプログラムのチュートリアルに沿って作った、基本的なReactJSアプリです。このアプリは、顧客やロボットの個人情報を記載したカードを作成します。検索バーは、ユーザーが何かを入力すると、動的に更新されます",
@@ -122,6 +124,7 @@ export const translations = {
       },
       projects :{
         header : "Projets",
+        omotebike: "Une web app réalisée avec NextJS. Elle permet de manager l'utilisation d'un vélo commun dans une share house, avec une interface simple d'utilisation, ainsi qu'un historique permettant de retracer qui à utilisé le vélo par le passé !",
         promptopia: "Partagez vos meilleurs prompts ChatGPT avec la communauté Promptopia ! Enregistrez vous via votre compte Google, et commencez à poster ou éditer vos meilleurs prompts IA. Cette app a été créé en utilisant NextJS, permettant un chargement de page et d'images rapides, ainsi qu'un routing de pages plus efficace",
         omotesando : "Un site internet simple, avec une utilisation concrète ! Gérer les rotations de corvées dans une grande colocation n'est pas toujours simple. Heureusement, ce site nous donne des informations claires et en temps réel sur le tri des déchets, ainsi que sur les duos responsables hebdomadaire .",
         robofriends : "Une application ReactJS basique, que j'ai réalisée en suivant le programme ZeroToMastery. Le site créé des cartes individuelles pour chaque client-robot, avec leurs informations personnelles. La barre de recherche est actualisée dynamiquement chaque fois qu'on y entre quelquechose.",
