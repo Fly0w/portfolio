@@ -12,13 +12,18 @@ class Projects extends Component {
     constructor(){
         super();
         this.state = {
-            selectedProject:"Promptopia",
-            websitePreview: "https://promptopia-fly0w.vercel.app/",
+            selectedProject:"Omotebike",
+            websitePreview: "https://omote-bike.vercel.app/",
             gitHubPreview:"https://github.com/Fly0w/Promptopia"
         }
     }
 
     projects ={
+            Omotebike: {
+                projectName: "Omotebike",
+                website: "https://omote-bike.vercel.app/" ,
+                gitHub: "https://github.com/Fly0w/omote-bike"
+            },
             Promptopia: {
                 projectName: "Promptopia",
                 website: "https://promptopia-fly0w.vercel.app/" ,
@@ -65,6 +70,7 @@ class Projects extends Component {
                     
                     <div className="listCard">
                         <Scroll>
+                            <Card projectName = "Omotebike" alter="Shared bike management Website" isClicked={() => this.switchProj("Omotebike")}/>   
                             <Card projectName = "Promptopia" alter="Prompt Sharing Website" isClicked={() => this.switchProj("Promptopia")}/>
                             <Card projectName = "FacetoFace" alter="Face Recognition App" isClicked={() => this.switchProj("FacetoFace")}/>
                             <Card projectName = "Omotesando" alter="House Companion Project" isClicked={() => this.switchProj("Omotesando")}/>

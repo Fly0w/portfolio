@@ -5,7 +5,17 @@ import { TbBrandNextjs, TbBrandVercel } from "react-icons/tb";
 
 class UsedTools extends Component {
     render(){
-        if (this.props.projectName === "Promptopia"){
+        if (this.props.projectName === "Omotebike"){
+            return(
+                <div className='listTools'>
+                    <TbBrandNextjs />
+                    <FaReact />
+                    <SiMongodb />
+                    <TbBrandVercel />
+                </div>
+            );
+        }
+        else if (this.props.projectName === "Promptopia"){
             return(
                 <div className='listTools'>
                     <TbBrandNextjs />

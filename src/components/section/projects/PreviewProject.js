@@ -2,7 +2,16 @@ import React, { Component } from 'react';
 
 class PreviewProject extends Component {
     render(){
-        if (this.props.linkPreview === "Promptopia"){
+        if (this.props.linkPreview === "Omotebike"){
+            return(
+                <div className="content_img">
+                    <img preload="auto" className="img__img" src= "https://github.com/Fly0w/omote-bike/blob/main/Media/Omote%20Bike%20home.gif" alt="Omotebike Project"/>                  
+                    <div className="text_img">
+                        <p>{this.props.text.omotebike}</p>
+                    </div>
+                </div>
+            );
+        } else if (this.props.linkPreview === "Promptopia"){
             return(
                 <div className="content_img">
                     <img preload="auto" className="img__img" src= "https://github.com/Fly0w/portfolio/blob/main/gif/Promptopia%20preview.gif?raw=true" alt="Promptopia Project"/>                  
