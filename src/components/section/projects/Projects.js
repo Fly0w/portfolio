@@ -13,16 +13,16 @@ class Projects extends Component {
         super();
         this.state = {
             selectedProject:"Omotebike",
-            websitePreview: "https://omote-bike.vercel.app/",
-            gitHubPreview:"https://github.com/Fly0w/Promptopia"
+            websitePreview: "https://omote-bike-public.vercel.app/",
+            gitHubPreview:"https://github.com/Fly0w/omote-bike-public"
         }
     }
 
     projects ={
             Omotebike: {
                 projectName: "Omotebike",
-                website: "https://omote-bike.vercel.app/" ,
-                gitHub: "https://github.com/Fly0w/omote-bike"
+                website: "https://omote-bike-public.vercel.app/" ,
+                gitHub: "https://github.com/Fly0w/omote-bike-public"
             },
             Promptopia: {
                 projectName: "Promptopia",
