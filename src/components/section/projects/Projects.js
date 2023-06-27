@@ -81,6 +81,7 @@ class Projects extends Component {
                         
                     </div>
                     <div className="preview">
+                        <h2 className='title_proj'>{this.state.selectedProject}</h2>
                         <PreviewProject linkPreview={this.state.selectedProject} text={this.props.text}/>
                     </div>
                     <div className="project_right">
