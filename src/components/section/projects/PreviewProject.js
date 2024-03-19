@@ -1,4 +1,12 @@
 import React, { Component } from "react";
+import gifShareHouse from "../../../assets/gif/ShareHouseManager-min.gif";
+import gifOmoteBike from "../../../assets/gif/Omote Bike preview.gif";
+import gifPromptopia from "../../../assets/gif/Promptopia preview.gif";
+import gifFaceToFace from "../../../assets/gif/FacetoFace preview-min.gif";
+import gifOmotesando from "../../../assets/gif/Omotesando preview-min.gif";
+import gifRobofriends from "../../../assets/gif/Robofriends preview-min.gif";
+import gifBG from "../../../assets/gif/BackgroundGenerator preview-min.gif";
+import gifPorfolio from "../../../assets/gif/Portfolio preview-min.gif";
 
 class PreviewProject extends Component {
   render() {
@@ -8,7 +16,7 @@ class PreviewProject extends Component {
           <img
             preload="auto"
             className="img__img"
-            src="https://github.com/Fly0w/portfolio/blob/main/gif/ShareHouseManager-min.gif?raw=true"
+            src={gifShareHouse}
             alt="Share House Manager Project"
           />
           <div className="text_img">
@@ -22,7 +30,7 @@ class PreviewProject extends Component {
           <img
             preload="auto"
             className="img__img"
-            src="https://github.com/Fly0w/portfolio/blob/main/gif/Omote%20Bike%20preview.gif?raw=true"
+            src={gifOmoteBike}
             alt="Omotebike Project"
           />
           <div className="text_img">
@@ -36,7 +44,7 @@ class PreviewProject extends Component {
           <img
             preload="auto"
             className="img__img"
-            src="https://github.com/Fly0w/portfolio/blob/main/gif/Promptopia%20preview.gif?raw=true"
+            src={gifPromptopia}
             alt="Promptopia Project"
           />
           <div className="text_img">
@@ -50,7 +58,7 @@ class PreviewProject extends Component {
           <img
             preload="auto"
             className="img__img"
-            src="https://github.com/Fly0w/portfolio/blob/main/gif/FacetoFace%20preview-min.gif?raw=true"
+            src={gifFaceToFace}
             alt="FacetoFace Project"
           />
           <div className="text_img">
@@ -64,7 +72,7 @@ class PreviewProject extends Component {
           <img
             preload="auto"
             className="img__img"
-            src="https://github.com/Fly0w/portfolio/blob/main/gif/Omotesando%20preview-min.gif?raw=true"
+            src={gifOmotesando}
             alt="Omotesando Project"
           />
           <div className="text_img">
@@ -78,7 +86,7 @@ class PreviewProject extends Component {
           <img
             preload="auto"
             className="img__img"
-            src="https://github.com/Fly0w/portfolio/blob/main/gif/Robofriends%20preview-min.gif?raw=true"
+            src={gifRobofriends}
             alt="Robofriends Project"
           />
           <div className="text_img">
@@ -92,7 +100,7 @@ class PreviewProject extends Component {
           <img
             preload="auto"
             className="img__img"
-            src="https://github.com/Fly0w/portfolio/blob/main/gif/BackgroundGenerator%20preview-min.gif?raw=true"
+            src={gifBG}
             alt="Background Generator Project"
           />
           <div className="text_img">
@@ -106,7 +114,7 @@ class PreviewProject extends Component {
           <img
             preload="auto"
             className="img__img"
-            src="https://github.com/Fly0w/portfolio/blob/main/gif/Portfolio%20preview-min.gif?raw=true"
+            src={gifPorfolio}
             alt="Portfolio Project"
           />
           <div className="text_img">
