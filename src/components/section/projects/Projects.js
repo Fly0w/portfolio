@@ -4,6 +4,12 @@ import Scroll from "./Scroll";
 import Button from "./Button";
 import Card from "./card/Card";
 import UsedTools from "./UsedTools";
+import React, { Component } from "react";
+import PreviewProject from "./PreviewProject";
+import Scroll from "./Scroll";
+import Button from "./Button";
+import Card from "./card/Card";
+import UsedTools from "./UsedTools";
 import "../Section.css";
 import "./Projects.css";
 
