@@ -1,8 +1,8 @@
 import React from "react";
 import NavButton from "./NavButton";
 import "./NavBar.css";
-import ResumeENG from "../img/ResumeENG.pdf";
-import ResumeJAP from "../img/ResumeJAP.pdf";
+import ResumeENG from "../../assets/img/ResumeENG.pdf";
+import ResumeJAP from "../../assets/img/ResumeJAP.pdf";
 import Language from "./Language";
 
 function NavBar(props) {

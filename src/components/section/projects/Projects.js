@@ -7,6 +7,15 @@ import UsedTools from "./UsedTools";
 import "../Section.css";
 import "./Projects.css";
 
+import ShareHouse from "../../../assets/img/ShareHouseManager.jpg";
+import OmoteBike from "../../../assets/img/Omotebike.jpg";
+import Promptopia from "../../../assets/img/Promptopia.jpg";
+import FaceToFace from "../../../assets/img/FacetoFace.jpg";
+import Omotesando from "../../../assets/img/Omotesando.jpg";
+import Robofriends from "../../../assets/img/Robofriends.jpg";
+import BGGen from "../../../assets/img/BackgroundGenerator.jpg";
+import Porfolio from "../../../assets/img/Portfolio.jpg";
+
 class Projects extends Component {
   constructor() {
     super();
@@ -14,56 +23,66 @@ class Projects extends Component {
       selectedProject: "ShareHouseManager",
       websitePreview: "https://share-house-manager-public.vercel.app/",
       gitHubPreview: "https://github.com/Fly0w/ShareHouseManagerPublic",
+      localImg: ShareHouse,
     };
   }
 
-  projects = {
-    ShareHouseManager: {
+  projects = [
+    {
       projectName: "ShareHouseManager",
       website: "https://share-house-manager-public.vercel.app/",
       gitHub: "https://github.com/Fly0w/ShareHouseManagerPublic",
+      localImg: ShareHouse,
     },
-    Omotebike: {
+    {
       projectName: "Omotebike",
       website: "https://omote-bike-public.vercel.app/",
       gitHub: "https://github.com/Fly0w/omote-bike-public",
+      localImg: OmoteBike,
     },
-    Promptopia: {
+    {
       projectName: "Promptopia",
       website: "https://promptopia-fly0w.vercel.app/",
       gitHub: "https://github.com/Fly0w/Promptopia",
+      localImg: Promptopia,
     },
-    FacetoFace: {
+    {
       projectName: "FacetoFace",
       website: "https://fly0w.github.io/facetoface/",
       gitHub: "https://github.com/Fly0w/facetoface",
+      localImg: FaceToFace,
     },
-    Omotesando: {
+    {
       projectName: "Omotesando",
       website: "https://fly0w.github.io/Omotesando1/",
       gitHub: "https://github.com/Fly0w/Omotesando1",
+      localImg: Omotesando,
     },
-    Robofriends: {
+    {
       projectName: "Robofriends",
       website: "https://fly0w.github.io/robofriends/",
       gitHub: "https://github.com/Fly0w/robofriends/tree/gh-pages",
+      localImg: Robofriends,
     },
-    BackgroundGenerator: {
+    {
       projectName: "BackgroundGenerator",
       website: "https://fly0w.github.io/background-generator/",
       gitHub: "https://github.com/Fly0w/background-generator",
+      localImg: BGGen,
     },
-    Portfolio: {
+    {
       projectName: "Portfolio",
       website: "https://fly0w.github.io/portfolio/",
       gitHub: "https://github.com/Fly0w/portfolio/tree/master",
+      localImg: Porfolio,
     },
-  };
+  ];
 
-  switchProj = (nomProj) => {
-    this.setState({ selectedProject: this.projects[nomProj].projectName });
-    this.setState({ websitePreview: this.projects[nomProj].website });
-    this.setState({ gitHubPreview: this.projects[nomProj].gitHub });
+  switchProj = (proj) => {
+    this.setState({ selectedProject: proj.projectName });
+    this.setState({ websitePreview: proj.website });
+    this.setState({ gitHubPreview: proj.gitHub });
+    this.setState({ localImg: proj.localImg });
   };
 
   render() {
@@ -75,8 +94,15 @@ class Projects extends Component {
         <div className="listProjects">
           <div className="listCard">
             <Scroll>
-              <Card
-                projectName="ShareHouseManager"
+              {this.projects.map((elem) => (
+                <Card
+                  projectName={elem.projectName}
+                  isClicked={() => this.switchProj(elem)}
+                  linkImg={elem.localImg}
+                />
+              ))}
+              {/* <Card
+                projectName="ShareHouseManager"                
                 alter="Share house manager"
                 isClicked={() => this.switchProj("ShareHouseManager")}
               />
@@ -114,7 +140,7 @@ class Projects extends Component {
                 projectName="Portfolio"
                 alter="Portfolio Project"
                 isClicked={() => this.switchProj("Portfolio")}
-              />
+              /> */}
             </Scroll>
           </div>
           <div className="preview">
